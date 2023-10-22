@@ -18,8 +18,8 @@ class MainText extends StatelessWidget {
               loading: () => SeoulWidget('loading'),
               error: (error) => SeoulWidget(error),
               loaded: (infoA,infoB){
-                var name = infoA.first.subname;
-                var eng = infoA.first.engname;
+                var name = infoA.first.subName;
+                var eng = infoA.first.engName;
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

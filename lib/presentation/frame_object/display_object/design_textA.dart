@@ -28,10 +28,10 @@ class TextContainerA extends StatelessWidget {
                 ),
                 BlocBuilder<DistanceCubit,SkTelecom_Model>(
                     builder: (context,state){
-                        if(state.updown < 0){
+                        if(state.upDown < 0){
                           print('상행');
                           return SubDetailInfo1();
-                        }else if(state.updown > 0){
+                        }else if(state.upDown > 0){
                           print('하행');
                           return SubDetailInfo2();
                         };
@@ -57,7 +57,7 @@ class TextContainerA extends StatelessWidget {
                             initial: () => Text('0010',style: textAcommon),
                             loading: () => Text('0010',style: textAcommon),
                             loaded: (stateA,stateB){
-                              return HeadingText(stateA.first.heading, stateA.first.line_ui);
+                              return HeadingText(stateA.first.heading, stateA.first.lineUi);
                             },
                             error: (msg) => Text(msg,
                                 style: textAcommon

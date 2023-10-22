@@ -14,9 +14,9 @@ class StoreBBloc extends Bloc<StoreBEvent, List<SubwayModelwithCode>> with Hydra
         List<SubwayModelwithCode> listModel = [];
         listModel.add(
           SubwayModelwithCode(
-              subname: sublist.subname.toString(), engname: sublist.engname.toString(),
-              lat: sublist.lat, lng: sublist.lng, line_ui: sublist.line_ui.toString(),
-              subwayid: sublist.subwayid, line: sublist.line.toString(),
+              subName: sublist.subName.toString(), engName: sublist.engName.toString(),
+              lat: sublist.lat, lng: sublist.lng, lineUi: sublist.lineUi.toString(),
+              subwayId: sublist.subwayId, line: sublist.line.toString(),
               heading: sublist.heading.toString(), code: event.code),
         );
         emit(listModel);

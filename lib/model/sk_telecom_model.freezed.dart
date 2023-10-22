@@ -20,11 +20,11 @@ SkTelecom_Model _$SkTelecom_ModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$SkTelecom_Model {
-  dynamic get subroute => throw _privateConstructorUsedError;
-  dynamic get subroutelist => throw _privateConstructorUsedError;
-  dynamic get updown => throw _privateConstructorUsedError;
+  dynamic get subRoute => throw _privateConstructorUsedError;
+  dynamic get subRouteList => throw _privateConstructorUsedError;
+  dynamic get upDown => throw _privateConstructorUsedError;
   dynamic get route => throw _privateConstructorUsedError;
-  dynamic get routelist => throw _privateConstructorUsedError;
+  dynamic get routeList => throw _privateConstructorUsedError;
   dynamic get time => throw _privateConstructorUsedError;
   dynamic get fare => throw _privateConstructorUsedError;
 
@@ -41,11 +41,11 @@ abstract class $SkTelecom_ModelCopyWith<$Res> {
       _$SkTelecom_ModelCopyWithImpl<$Res, SkTelecom_Model>;
   @useResult
   $Res call(
-      {dynamic subroute,
-      dynamic subroutelist,
-      dynamic updown,
+      {dynamic subRoute,
+      dynamic subRouteList,
+      dynamic upDown,
       dynamic route,
-      dynamic routelist,
+      dynamic routeList,
       dynamic time,
       dynamic fare});
 }
@@ -63,34 +63,34 @@ class _$SkTelecom_ModelCopyWithImpl<$Res, $Val extends SkTelecom_Model>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subroute = freezed,
-    Object? subroutelist = freezed,
-    Object? updown = freezed,
+    Object? subRoute = freezed,
+    Object? subRouteList = freezed,
+    Object? upDown = freezed,
     Object? route = freezed,
-    Object? routelist = freezed,
+    Object? routeList = freezed,
     Object? time = freezed,
     Object? fare = freezed,
   }) {
     return _then(_value.copyWith(
-      subroute: freezed == subroute
-          ? _value.subroute
-          : subroute // ignore: cast_nullable_to_non_nullable
+      subRoute: freezed == subRoute
+          ? _value.subRoute
+          : subRoute // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      subroutelist: freezed == subroutelist
-          ? _value.subroutelist
-          : subroutelist // ignore: cast_nullable_to_non_nullable
+      subRouteList: freezed == subRouteList
+          ? _value.subRouteList
+          : subRouteList // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      updown: freezed == updown
-          ? _value.updown
-          : updown // ignore: cast_nullable_to_non_nullable
+      upDown: freezed == upDown
+          ? _value.upDown
+          : upDown // ignore: cast_nullable_to_non_nullable
               as dynamic,
       route: freezed == route
           ? _value.route
           : route // ignore: cast_nullable_to_non_nullable
               as dynamic,
-      routelist: freezed == routelist
-          ? _value.routelist
-          : routelist // ignore: cast_nullable_to_non_nullable
+      routeList: freezed == routeList
+          ? _value.routeList
+          : routeList // ignore: cast_nullable_to_non_nullable
               as dynamic,
       time: freezed == time
           ? _value.time
@@ -113,11 +113,11 @@ abstract class _$$_SkTelecom_ModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {dynamic subroute,
-      dynamic subroutelist,
-      dynamic updown,
+      {dynamic subRoute,
+      dynamic subRouteList,
+      dynamic upDown,
       dynamic route,
-      dynamic routelist,
+      dynamic routeList,
       dynamic time,
       dynamic fare});
 }
@@ -133,21 +133,21 @@ class __$$_SkTelecom_ModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subroute = freezed,
-    Object? subroutelist = freezed,
-    Object? updown = freezed,
+    Object? subRoute = freezed,
+    Object? subRouteList = freezed,
+    Object? upDown = freezed,
     Object? route = freezed,
-    Object? routelist = freezed,
+    Object? routeList = freezed,
     Object? time = freezed,
     Object? fare = freezed,
   }) {
     return _then(_$_SkTelecom_Model(
-      subroute: freezed == subroute ? _value.subroute! : subroute,
-      subroutelist:
-          freezed == subroutelist ? _value.subroutelist! : subroutelist,
-      updown: freezed == updown ? _value.updown! : updown,
+      subRoute: freezed == subRoute ? _value.subRoute! : subRoute,
+      subRouteList:
+          freezed == subRouteList ? _value.subRouteList! : subRouteList,
+      upDown: freezed == upDown ? _value.upDown! : upDown,
       route: freezed == route ? _value.route! : route,
-      routelist: freezed == routelist ? _value.routelist! : routelist,
+      routeList: freezed == routeList ? _value.routeList! : routeList,
       time: freezed == time ? _value.time! : time,
       fare: freezed == fare ? _value.fare! : fare,
     ));
@@ -160,11 +160,11 @@ class _$_SkTelecom_Model
     with DiagnosticableTreeMixin
     implements _SkTelecom_Model {
   const _$_SkTelecom_Model(
-      {this.subroute = '정보없음',
-      this.subroutelist = '정보없음',
-      this.updown = 0000,
+      {this.subRoute = '정보없음',
+      this.subRouteList = '정보없음',
+      this.upDown = 0000,
       this.route = '정보없음',
-      this.routelist = '정보없음',
+      this.routeList = '정보없음',
       this.time = 0000,
       this.fare = 0000});
 
@@ -173,19 +173,19 @@ class _$_SkTelecom_Model
 
   @override
   @JsonKey()
-  final dynamic subroute;
+  final dynamic subRoute;
   @override
   @JsonKey()
-  final dynamic subroutelist;
+  final dynamic subRouteList;
   @override
   @JsonKey()
-  final dynamic updown;
+  final dynamic upDown;
   @override
   @JsonKey()
   final dynamic route;
   @override
   @JsonKey()
-  final dynamic routelist;
+  final dynamic routeList;
   @override
   @JsonKey()
   final dynamic time;
@@ -195,7 +195,7 @@ class _$_SkTelecom_Model
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'SkTelecom_Model(subroute: $subroute, subroutelist: $subroutelist, updown: $updown, route: $route, routelist: $routelist, time: $time, fare: $fare)';
+    return 'SkTelecom_Model(subRoute: $subRoute, subRouteList: $subRouteList, upDown: $upDown, route: $route, routeList: $routeList, time: $time, fare: $fare)';
   }
 
   @override
@@ -203,11 +203,11 @@ class _$_SkTelecom_Model
     super.debugFillProperties(properties);
     properties
       ..add(DiagnosticsProperty('type', 'SkTelecom_Model'))
-      ..add(DiagnosticsProperty('subroute', subroute))
-      ..add(DiagnosticsProperty('subroutelist', subroutelist))
-      ..add(DiagnosticsProperty('updown', updown))
+      ..add(DiagnosticsProperty('subRoute', subRoute))
+      ..add(DiagnosticsProperty('subRouteList', subRouteList))
+      ..add(DiagnosticsProperty('upDown', upDown))
       ..add(DiagnosticsProperty('route', route))
-      ..add(DiagnosticsProperty('routelist', routelist))
+      ..add(DiagnosticsProperty('routeList', routeList))
       ..add(DiagnosticsProperty('time', time))
       ..add(DiagnosticsProperty('fare', fare));
   }
@@ -217,12 +217,12 @@ class _$_SkTelecom_Model
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SkTelecom_Model &&
-            const DeepCollectionEquality().equals(other.subroute, subroute) &&
+            const DeepCollectionEquality().equals(other.subRoute, subRoute) &&
             const DeepCollectionEquality()
-                .equals(other.subroutelist, subroutelist) &&
-            const DeepCollectionEquality().equals(other.updown, updown) &&
+                .equals(other.subRouteList, subRouteList) &&
+            const DeepCollectionEquality().equals(other.upDown, upDown) &&
             const DeepCollectionEquality().equals(other.route, route) &&
-            const DeepCollectionEquality().equals(other.routelist, routelist) &&
+            const DeepCollectionEquality().equals(other.routeList, routeList) &&
             const DeepCollectionEquality().equals(other.time, time) &&
             const DeepCollectionEquality().equals(other.fare, fare));
   }
@@ -231,11 +231,11 @@ class _$_SkTelecom_Model
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(subroute),
-      const DeepCollectionEquality().hash(subroutelist),
-      const DeepCollectionEquality().hash(updown),
+      const DeepCollectionEquality().hash(subRoute),
+      const DeepCollectionEquality().hash(subRouteList),
+      const DeepCollectionEquality().hash(upDown),
       const DeepCollectionEquality().hash(route),
-      const DeepCollectionEquality().hash(routelist),
+      const DeepCollectionEquality().hash(routeList),
       const DeepCollectionEquality().hash(time),
       const DeepCollectionEquality().hash(fare));
 
@@ -255,11 +255,11 @@ class _$_SkTelecom_Model
 
 abstract class _SkTelecom_Model implements SkTelecom_Model {
   const factory _SkTelecom_Model(
-      {final dynamic subroute,
-      final dynamic subroutelist,
-      final dynamic updown,
+      {final dynamic subRoute,
+      final dynamic subRouteList,
+      final dynamic upDown,
       final dynamic route,
-      final dynamic routelist,
+      final dynamic routeList,
       final dynamic time,
       final dynamic fare}) = _$_SkTelecom_Model;
 
@@ -267,15 +267,15 @@ abstract class _SkTelecom_Model implements SkTelecom_Model {
       _$_SkTelecom_Model.fromJson;
 
   @override
-  dynamic get subroute;
+  dynamic get subRoute;
   @override
-  dynamic get subroutelist;
+  dynamic get subRouteList;
   @override
-  dynamic get updown;
+  dynamic get upDown;
   @override
   dynamic get route;
   @override
-  dynamic get routelist;
+  dynamic get routeList;
   @override
   dynamic get time;
   @override

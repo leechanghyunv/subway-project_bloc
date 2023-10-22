@@ -28,7 +28,7 @@ class DialogPage extends StatelessWidget {
                               children: [
                                 SlidableAction(onPressed: (context){
                                   context.read<SubInfoFilterBloc>().
-                                  add(SubInfoFilterEvent.filtedList(row.subname));
+                                  add(SubInfoFilterEvent.filtedList(row.subName));
                                   showDialog(
                                       context: context,
                                       builder: (BuildContext context){
@@ -82,8 +82,8 @@ class DialogPage extends StatelessWidget {
                                                 Padding(
                                                   padding: const EdgeInsets.all(8.0),
                                                   child: DialogDesignBoxC(
-                                                    line: row.line_ui,
-                                                    name: row.subname,
+                                                    line: row.lineUi,
+                                                    name: row.subName,
                                                   ),
                                                 ),
                                               ],
@@ -97,7 +97,7 @@ class DialogPage extends StatelessWidget {
                                                 comment: 'Cancel'),
                                             SizedBox(
                                               child: SmsFunction(
-                                                  line: row.line_ui
+                                                  line: row.lineUi
                                               ),
                                             ),
                                           ],
@@ -114,13 +114,13 @@ class DialogPage extends StatelessWidget {
                             child: Material(
                               child: InkWell(
                                 onTap: (){
-                                  context.read<ArrivalBloc>().add(ArrivalEvent.ArrivalList(row.subname, row.subwayid.toString()));
-                                  context.read<CodeBloc>().add(CodeEvent.started(row.subname, row.line_ui));
-                                  context.read<SubInfoFilterBloc>().add(SubInfoFilterEvent.filtedList(row.subname));
-                                  context.read<SubInfoFilterBlocB>().add(SubInfoFilterEvent.filtedList(row.subname));
+                                  context.read<ArrivalBloc>().add(ArrivalEvent.ArrivalList(row.subName, row.subwayId.toString()));
+                                  context.read<CodeBloc>().add(CodeEvent.started(row.subName, row.lineUi));
+                                  context.read<SubInfoFilterBloc>().add(SubInfoFilterEvent.filtedList(row.subName));
+                                  context.read<SubInfoFilterBlocB>().add(SubInfoFilterEvent.filtedList(row.subName));
                                   Get.dialog(
                                     AlertDialog(
-                                      content: SwitchDialogC(name: row.subname,line: row.line),
+                                      content: SwitchDialogC(name: row.subName,line: row.line),
                                       actions: [
                                         DialogButton(
                                           comment: 'Cencel',
@@ -142,7 +142,7 @@ class DialogPage extends StatelessWidget {
                                   selectedColor: Colors.grey[300],
                                   title: Row(
                                     children: [
-                                      Text('${row.subname}',
+                                      Text(row.subName,
                                         style: TextStyle(
                                             fontSize: 3.3.w,
                                             fontWeight:FontWeight.bold,

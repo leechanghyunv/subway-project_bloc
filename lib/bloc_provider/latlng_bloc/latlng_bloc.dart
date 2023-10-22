@@ -32,7 +32,7 @@ class LatlngBloc extends Bloc<LatlngEvent, LatlngState> {
         data[i] = data[i].setKm(km);
       }
       data.sort((a,b) => a.km!.compareTo(b.km!));
-      List<SubwayModel> result = data.where((e) => e.line_ui.contains(event.line)).toList();
+      List<SubwayModel> result = data.where((e) => e.lineUi.contains(event.line)).toList();
       emit(_Loaded(result));
     });
 

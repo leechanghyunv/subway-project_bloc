@@ -58,10 +58,10 @@ Future<List<SubwayModel>> searchSubway({required name, String? line}) async {
   List<SubwayModel> model = await insideAssets.fetchInside();
 
   if(line != null){
-    final List<SubwayModel> filtedState = model.where((e) => e.subname == name && e.line_ui == line).toList();
+    final List<SubwayModel> filtedState = model.where((e) => e.subName == name && e.lineUi == line).toList();
     return filtedState;
   } else {
-    final List<SubwayModel> filtedState = model.where((e) => e.subname == name).toList();
+    final List<SubwayModel> filtedState = model.where((e) => e.subName == name).toList();
     return filtedState;
   }
 }

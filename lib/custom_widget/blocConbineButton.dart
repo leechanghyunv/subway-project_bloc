@@ -1,5 +1,3 @@
-import 'package:subway_project_withbloc_230919/bloc_provider/sub_List_bloc/sub_list_cubit.dart';
-
 import '../bloc_provider/hive_provider.dart';
 import '../model/choice_chip_model.dart';
 import '../setting/exportA.dart';
@@ -60,16 +58,16 @@ class _BlocCombineButtonState extends State<BlocCombineButton> {
                     context.read<TableInfoBloc>().
                     add(TableInfoEvent.started(
                         SubwayModelwithCode(
-                            subname: info.subname,
-                            engname: info.engname,
+                            subName: info.subName,
+                            engName: info.engName,
                             code: code)
                     ));
-                    context.read<SubListCubit>().addList(info.subname);
-                    savemsg('목적지 A', info.subname, info.engname);
-                    hiveService.putBox(ChipModel(name: info.subname));
+                    context.read<SubListCubit>().addList(info.subName);
+                    savemsg('목적지 A', info.subName, info.engName);
+                    hiveService.putBox(ChipModel(name: info.subName));
                     setState(() {});
                   } else {
-                    print('model value is Empty and code is ${code}');
+                    print('model value is Empty and code is $code');
                   }
                 },
                 onLongPress: () async {
@@ -80,13 +78,13 @@ class _BlocCombineButtonState extends State<BlocCombineButton> {
                     context.read<TableInfoBloc>().
                     add(TableInfoEvent.started(
                       SubwayModelwithCode(
-                          subname: info.subname,
-                          engname: info.engname,
+                          subName: info.subName,
+                          engName: info.engName,
                           code: code)
                     ));
-                    context.read<SubListCubit>().addList(info.subname);
-                    savemsg('목적지 B', info.subname, info.engname);
-                    hiveService.putBox(ChipModel(name: info.subname));
+                    context.read<SubListCubit>().addList(info.subName);
+                    savemsg('목적지 B', info.subName, info.engName);
+                    hiveService.putBox(ChipModel(name: info.subName));
                     setState(() {});
                   } else {
                     print('model value is Empty and code is $code');

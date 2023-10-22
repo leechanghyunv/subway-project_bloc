@@ -38,17 +38,17 @@ class LinePickerB extends StatelessWidget {
                               activeColor: Colors.grey[600],
                               title: Row(
                                 children: [
-                                  IconColor(blocList[index].line_ui),
+                                  IconColor(blocList[index].lineUi),
                                   SizedBox(width: 10,),
-                                  Text(blocList[index].line_ui,style: TextStyle(fontWeight: FontWeight.bold),),
+                                  Text(blocList[index].lineUi,style: TextStyle(fontWeight: FontWeight.bold),),
                                 ],
                               ),
-                              subtitle: subName(blocList[index].subwayid.toString()),
+                              subtitle: subName(blocList[index].subwayId.toString()),
                               onChanged: (value){
                                 if(value != null){
                                   blocList = List.from(blocList.map((e){
-                                    if(e.line_ui == blocList[index].line_ui){
-                                      lineNumber = blocList[index].line_ui;
+                                    if(e.lineUi == blocList[index].lineUi){
+                                      lineNumber = blocList[index].lineUi;
                                       return e.copyWith(isSelected: true);
                                     } else {
                                       return e;
@@ -71,7 +71,7 @@ class LinePickerB extends StatelessWidget {
         BlocCombineTButton(
           subname: value,
           subline: lineNumber,
-          engname: blocList.first.engname),
+          engname: blocList.first.engName),
       ],
     );
   }

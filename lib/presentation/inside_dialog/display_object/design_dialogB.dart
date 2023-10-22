@@ -95,7 +95,7 @@ Widget BlocContainerA() => BlocBuilder<
             return SizedBox(
               height: 14.5.w,
               width: 3.6.w,
-              child: ColorContainer(info.line_ui),
+              child: ColorContainer(info.lineUi),
             );
           }
           return SizedBox(
@@ -110,7 +110,7 @@ Widget BlocContainerB() => BlocBuilder<
     builder: (context, state) {
       if(state.isNotEmpty){
         var info = state.first;
-        var name = info.subname;
+        var name = info.subName;
         final filtered = name.replaceAll(RegExp(r'\([^()]*\)'), '');
         return
           Text('${filtered}역',

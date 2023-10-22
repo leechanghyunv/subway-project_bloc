@@ -20,12 +20,12 @@ SubwayModelwithCode _$SubwayModelwithCodeFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$SubwayModelwithCode {
-  String get subname => throw _privateConstructorUsedError;
-  String get engname => throw _privateConstructorUsedError;
+  String get subName => throw _privateConstructorUsedError;
+  String get engName => throw _privateConstructorUsedError;
   double get lat => throw _privateConstructorUsedError;
   double get lng => throw _privateConstructorUsedError;
-  String get line_ui => throw _privateConstructorUsedError;
-  int get subwayid => throw _privateConstructorUsedError;
+  String get lineUi => throw _privateConstructorUsedError;
+  int get subwayId => throw _privateConstructorUsedError;
   String get line => throw _privateConstructorUsedError;
   String get heading => throw _privateConstructorUsedError;
   String get code => throw _privateConstructorUsedError;
@@ -43,12 +43,12 @@ abstract class $SubwayModelwithCodeCopyWith<$Res> {
       _$SubwayModelwithCodeCopyWithImpl<$Res, SubwayModelwithCode>;
   @useResult
   $Res call(
-      {String subname,
-      String engname,
+      {String subName,
+      String engName,
       double lat,
       double lng,
-      String line_ui,
-      int subwayid,
+      String lineUi,
+      int subwayId,
       String line,
       String heading,
       String code});
@@ -67,24 +67,24 @@ class _$SubwayModelwithCodeCopyWithImpl<$Res, $Val extends SubwayModelwithCode>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subname = null,
-    Object? engname = null,
+    Object? subName = null,
+    Object? engName = null,
     Object? lat = null,
     Object? lng = null,
-    Object? line_ui = null,
-    Object? subwayid = null,
+    Object? lineUi = null,
+    Object? subwayId = null,
     Object? line = null,
     Object? heading = null,
     Object? code = null,
   }) {
     return _then(_value.copyWith(
-      subname: null == subname
-          ? _value.subname
-          : subname // ignore: cast_nullable_to_non_nullable
+      subName: null == subName
+          ? _value.subName
+          : subName // ignore: cast_nullable_to_non_nullable
               as String,
-      engname: null == engname
-          ? _value.engname
-          : engname // ignore: cast_nullable_to_non_nullable
+      engName: null == engName
+          ? _value.engName
+          : engName // ignore: cast_nullable_to_non_nullable
               as String,
       lat: null == lat
           ? _value.lat
@@ -94,13 +94,13 @@ class _$SubwayModelwithCodeCopyWithImpl<$Res, $Val extends SubwayModelwithCode>
           ? _value.lng
           : lng // ignore: cast_nullable_to_non_nullable
               as double,
-      line_ui: null == line_ui
-          ? _value.line_ui
-          : line_ui // ignore: cast_nullable_to_non_nullable
+      lineUi: null == lineUi
+          ? _value.lineUi
+          : lineUi // ignore: cast_nullable_to_non_nullable
               as String,
-      subwayid: null == subwayid
-          ? _value.subwayid
-          : subwayid // ignore: cast_nullable_to_non_nullable
+      subwayId: null == subwayId
+          ? _value.subwayId
+          : subwayId // ignore: cast_nullable_to_non_nullable
               as int,
       line: null == line
           ? _value.line
@@ -127,12 +127,12 @@ abstract class _$$_SubwayModelwithCodeCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String subname,
-      String engname,
+      {String subName,
+      String engName,
       double lat,
       double lng,
-      String line_ui,
-      int subwayid,
+      String lineUi,
+      int subwayId,
       String line,
       String heading,
       String code});
@@ -149,24 +149,24 @@ class __$$_SubwayModelwithCodeCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? subname = null,
-    Object? engname = null,
+    Object? subName = null,
+    Object? engName = null,
     Object? lat = null,
     Object? lng = null,
-    Object? line_ui = null,
-    Object? subwayid = null,
+    Object? lineUi = null,
+    Object? subwayId = null,
     Object? line = null,
     Object? heading = null,
     Object? code = null,
   }) {
     return _then(_$_SubwayModelwithCode(
-      subname: null == subname
-          ? _value.subname
-          : subname // ignore: cast_nullable_to_non_nullable
+      subName: null == subName
+          ? _value.subName
+          : subName // ignore: cast_nullable_to_non_nullable
               as String,
-      engname: null == engname
-          ? _value.engname
-          : engname // ignore: cast_nullable_to_non_nullable
+      engName: null == engName
+          ? _value.engName
+          : engName // ignore: cast_nullable_to_non_nullable
               as String,
       lat: null == lat
           ? _value.lat
@@ -176,13 +176,13 @@ class __$$_SubwayModelwithCodeCopyWithImpl<$Res>
           ? _value.lng
           : lng // ignore: cast_nullable_to_non_nullable
               as double,
-      line_ui: null == line_ui
-          ? _value.line_ui
-          : line_ui // ignore: cast_nullable_to_non_nullable
+      lineUi: null == lineUi
+          ? _value.lineUi
+          : lineUi // ignore: cast_nullable_to_non_nullable
               as String,
-      subwayid: null == subwayid
-          ? _value.subwayid
-          : subwayid // ignore: cast_nullable_to_non_nullable
+      subwayId: null == subwayId
+          ? _value.subwayId
+          : subwayId // ignore: cast_nullable_to_non_nullable
               as int,
       line: null == line
           ? _value.line
@@ -204,12 +204,12 @@ class __$$_SubwayModelwithCodeCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_SubwayModelwithCode implements _SubwayModelwithCode {
   const _$_SubwayModelwithCode(
-      {this.subname = '정보없음',
-      this.engname = '정보없음',
+      {this.subName = '정보없음',
+      this.engName = '정보없음',
       this.lat = 0.0,
       this.lng = 0.0,
-      this.line_ui = '정보없음',
-      this.subwayid = 0,
+      this.lineUi = '정보없음',
+      this.subwayId = 0,
       this.line = '정보없음',
       this.heading = '정보없음',
       this.code = '정보없음'});
@@ -219,10 +219,10 @@ class _$_SubwayModelwithCode implements _SubwayModelwithCode {
 
   @override
   @JsonKey()
-  final String subname;
+  final String subName;
   @override
   @JsonKey()
-  final String engname;
+  final String engName;
   @override
   @JsonKey()
   final double lat;
@@ -231,10 +231,10 @@ class _$_SubwayModelwithCode implements _SubwayModelwithCode {
   final double lng;
   @override
   @JsonKey()
-  final String line_ui;
+  final String lineUi;
   @override
   @JsonKey()
-  final int subwayid;
+  final int subwayId;
   @override
   @JsonKey()
   final String line;
@@ -247,7 +247,7 @@ class _$_SubwayModelwithCode implements _SubwayModelwithCode {
 
   @override
   String toString() {
-    return 'SubwayModelwithCode(subname: $subname, engname: $engname, lat: $lat, lng: $lng, line_ui: $line_ui, subwayid: $subwayid, line: $line, heading: $heading, code: $code)';
+    return 'SubwayModelwithCode(subName: $subName, engName: $engName, lat: $lat, lng: $lng, lineUi: $lineUi, subwayId: $subwayId, line: $line, heading: $heading, code: $code)';
   }
 
   @override
@@ -255,13 +255,13 @@ class _$_SubwayModelwithCode implements _SubwayModelwithCode {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SubwayModelwithCode &&
-            (identical(other.subname, subname) || other.subname == subname) &&
-            (identical(other.engname, engname) || other.engname == engname) &&
+            (identical(other.subName, subName) || other.subName == subName) &&
+            (identical(other.engName, engName) || other.engName == engName) &&
             (identical(other.lat, lat) || other.lat == lat) &&
             (identical(other.lng, lng) || other.lng == lng) &&
-            (identical(other.line_ui, line_ui) || other.line_ui == line_ui) &&
-            (identical(other.subwayid, subwayid) ||
-                other.subwayid == subwayid) &&
+            (identical(other.lineUi, lineUi) || other.lineUi == lineUi) &&
+            (identical(other.subwayId, subwayId) ||
+                other.subwayId == subwayId) &&
             (identical(other.line, line) || other.line == line) &&
             (identical(other.heading, heading) || other.heading == heading) &&
             (identical(other.code, code) || other.code == code));
@@ -269,8 +269,8 @@ class _$_SubwayModelwithCode implements _SubwayModelwithCode {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, subname, engname, lat, lng,
-      line_ui, subwayid, line, heading, code);
+  int get hashCode => Object.hash(runtimeType, subName, engName, lat, lng,
+      lineUi, subwayId, line, heading, code);
 
   @JsonKey(ignore: true)
   @override
@@ -289,12 +289,12 @@ class _$_SubwayModelwithCode implements _SubwayModelwithCode {
 
 abstract class _SubwayModelwithCode implements SubwayModelwithCode {
   const factory _SubwayModelwithCode(
-      {final String subname,
-      final String engname,
+      {final String subName,
+      final String engName,
       final double lat,
       final double lng,
-      final String line_ui,
-      final int subwayid,
+      final String lineUi,
+      final int subwayId,
       final String line,
       final String heading,
       final String code}) = _$_SubwayModelwithCode;
@@ -303,17 +303,17 @@ abstract class _SubwayModelwithCode implements SubwayModelwithCode {
       _$_SubwayModelwithCode.fromJson;
 
   @override
-  String get subname;
+  String get subName;
   @override
-  String get engname;
+  String get engName;
   @override
   double get lat;
   @override
   double get lng;
   @override
-  String get line_ui;
+  String get lineUi;
   @override
-  int get subwayid;
+  int get subwayId;
   @override
   String get line;
   @override

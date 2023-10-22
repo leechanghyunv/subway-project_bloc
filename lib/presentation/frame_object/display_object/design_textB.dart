@@ -65,9 +65,9 @@ class TextContainerB extends StatelessWidget {
                     ),
                     BlocBuilder<DistanceCubit,SkTelecom_Model>(
                       builder: (context,state){
-                        if(state.updown < 0){
+                        if(state.upDown < 0){
                           return SubDetailInfo3();
-                        }else if(state.updown > 0){
+                        }else if(state.upDown > 0){
                           return SubDetailInfo4();
                         }
                         return ToolTipWidget(

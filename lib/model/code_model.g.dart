@@ -35,7 +35,7 @@ Map<String, dynamic> _$$_SearchInfoBySubwayNameServiceToJson(
 
 _$_CodeModel _$$_CodeModelFromJson(Map<String, dynamic> json) => _$_CodeModel(
       stationCd: json['STATION_CD'] as String? ?? "정보없음",
-      subname: json['STATION_NM'] as String? ?? "정보없음",
+      name: json['STATION_NM'] as String? ?? "정보없음",
       line: json['LINE_NUM'] as String? ?? "정보없음",
       code: json['FR_CODE'] as String? ?? "정보없음",
     );
@@ -43,7 +43,7 @@ _$_CodeModel _$$_CodeModelFromJson(Map<String, dynamic> json) => _$_CodeModel(
 Map<String, dynamic> _$$_CodeModelToJson(_$_CodeModel instance) =>
     <String, dynamic>{
       'STATION_CD': instance.stationCd,
-      'STATION_NM': instance.subname,
+      'STATION_NM': instance.name,
       'LINE_NUM': instance.line,
       'FR_CODE': instance.code,
     };

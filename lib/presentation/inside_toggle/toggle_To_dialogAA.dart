@@ -18,8 +18,8 @@ class _ToggleToDialogAAState extends State<ToggleToDialogAA> {
       var stateB = storeB.first;
       return AlertDialog(
           content: SwitchDialogA(
-              name: stateA.subname, list: stateA.subwayid.toString(),
-              dest: stateB.subname, line: stateA.line
+              name: stateA.subName, list: stateA.subwayId.toString(),
+              dest: stateB.subName, line: stateA.line
           ),
         actions: [
           DialogButton(
@@ -36,9 +36,9 @@ class _ToggleToDialogAAState extends State<ToggleToDialogAA> {
 
               DistModel model = DistModel(
                 latA: stateA.lat.toString(), lngA: stateA.lng.toString(),
-                nameA: stateA.subname,
+                nameA: stateA.subName,
                 latB: stateB.lat.toString(), lngB: stateB.lng.toString(),
-                nameB: stateB.subname,
+                nameB: stateB.subName,
               );
 
               context.read<DistanceCubit>().callApiSubInfo(model);

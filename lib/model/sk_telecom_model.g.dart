@@ -8,22 +8,22 @@ part of 'sk_telecom_model.dart';
 
 _$_SkTelecom_Model _$$_SkTelecom_ModelFromJson(Map<String, dynamic> json) =>
     _$_SkTelecom_Model(
-      subroute: json['subroute'] ?? '정보없음',
-      subroutelist: json['subroutelist'] ?? '정보없음',
-      updown: json['updown'] ?? 0000,
+      subRoute: json['subRoute'] ?? '정보없음',
+      subRouteList: json['subRouteList'] ?? '정보없음',
+      upDown: json['upDown'] ?? 0000,
       route: json['route'] ?? '정보없음',
-      routelist: json['routelist'] ?? '정보없음',
+      routeList: json['routeList'] ?? '정보없음',
       time: json['time'] ?? 0000,
       fare: json['fare'] ?? 0000,
     );
 
 Map<String, dynamic> _$$_SkTelecom_ModelToJson(_$_SkTelecom_Model instance) =>
     <String, dynamic>{
-      'subroute': instance.subroute,
-      'subroutelist': instance.subroutelist,
-      'updown': instance.updown,
+      'subRoute': instance.subRoute,
+      'subRouteList': instance.subRouteList,
+      'upDown': instance.upDown,
       'route': instance.route,
-      'routelist': instance.routelist,
+      'routeList': instance.routeList,
       'time': instance.time,
       'fare': instance.fare,
     };

@@ -18,7 +18,7 @@ class _DialogDesignBoxAState extends State<DialogDesignBoxA> {
     super.didChangeDependencies();
     linevalue = context.watch<TransferBloc?>()!.state.when(
         initial: () => 'Line2', loading: () => 'Line2', error: (msg) => 'Line2',
-        loaded: (subA,subB) => subA.first.line_ui);
+        loaded: (subA,subB) => subA.first.lineUi);
   }
 
   @override
@@ -87,8 +87,8 @@ class _DialogDesignBoxAState extends State<DialogDesignBoxA> {
                         loading: () => Text('SEOUL', style: dialogAB),
                         error: (msg) => Text('SEOUL', style: dialogAB),
                           loaded: (A,B){
-                            linevalue = A.first.line_ui;
-                            return Text('${A.first.subname}역',
+                            linevalue = A.first.lineUi;
+                            return Text('${A.first.subName}역',
                                 style: dialogAB);
                           },
 

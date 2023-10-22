@@ -31,7 +31,7 @@ class _InputSubwayState extends State<InputSubway> {
           loading: () => TextFrame(comment: 'loading',),
           error: (err) => TextFrame(comment: err),
           loaded: (loaded){
-            final filtedstate = loaded.map((e) => e.subname).toSet().toList();
+            final filtedstate = loaded.map((e) => e.subName).toSet().toList();
             return Column(
               children: [
                 RawAutocomplete<String>(

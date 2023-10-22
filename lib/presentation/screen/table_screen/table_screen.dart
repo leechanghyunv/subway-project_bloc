@@ -89,10 +89,10 @@ class _TableScreenState extends State<TableScreen> {
             loaded: (timeA, timeB){
               List<TableModel> subTableA = List.from(timeA);
               List<TableModel> subTableB = List.from(timeB);
-              subTableA.sort((a,b)=>a.arrivetime.compareTo(b.arrivetime));
-              subTableB.sort((a,b)=>a.arrivetime.compareTo(b.arrivetime));
-              var filtedA = subTableA.where((e) => e.arrivetime != '00:00:00').toList();
-              var filtedB = subTableB.where((e) => e.arrivetime != '00:00:00').toList();
+              subTableA.sort((a,b)=>a.arriveTime.compareTo(b.arriveTime));
+              subTableB.sort((a,b)=>a.arriveTime.compareTo(b.arriveTime));
+              var filtedA = subTableA.where((e) => e.arriveTime != '00:00:00').toList();
+              var filtedB = subTableB.where((e) => e.arriveTime != '00:00:00').toList();
 
               return TimeTable(
                 childA: ListView.builder(
@@ -101,7 +101,7 @@ class _TableScreenState extends State<TableScreen> {
                     itemBuilder: (context, index){
                       var row = filtedA[index];
                       return TableList(
-                          row.sname,row.ename, row.express.name,row.arrivetime);
+                          row.sName,row.eName, row.express.name,row.arriveTime);
                     }),
 
                 childB: ListView.builder(
@@ -110,7 +110,7 @@ class _TableScreenState extends State<TableScreen> {
                     itemBuilder: (context, index){
                       var row = filtedB[index];
                       return TableList(
-                          row.sname,row.ename, row.express.name,row.arrivetime);
+                          row.sName,row.eName, row.express.name,row.arriveTime);
                     }),
               );
 

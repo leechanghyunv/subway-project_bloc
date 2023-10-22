@@ -61,8 +61,8 @@ class DistanceCubit extends Cubit<SkTelecom_Model> {
          /// /// /// /// /// /// /// /// /// /// // /// /// /// /// /// /// /// /// /// /// /// //
 
           emit(SkTelecom_Model(
-            subroute: formattedRoute, subroutelist: subroute,
-            time: time, fare: fare, updown: updown,
+            subRoute: formattedRoute, subRouteList: subroute,
+            time: time, fare: fare, upDown: updown,
           ));
 
       } else {
@@ -78,7 +78,7 @@ class DistanceCubit extends Cubit<SkTelecom_Model> {
           getAnotherNotice(time,pathtype,formattedpathtype,formattedRoute);
            /// /// /// /// /// /// /// /// /// /// // /// /// /// /// /// /// /// /// /// /// /// //
           emit(SkTelecom_Model(
-            route: formattedpathtype, routelist: formattedRoute,
+            route: formattedpathtype, routeList: formattedRoute,
             fare: fare, time: time,
           ));
         }

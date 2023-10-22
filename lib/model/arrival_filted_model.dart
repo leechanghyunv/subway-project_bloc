@@ -9,10 +9,10 @@ part 'arrival_filted_model.g.dart';
 class ArrivalFiltedModel with _$ArrivalFiltedModel {
   const factory ArrivalFiltedModel({
     List<ArrivalModel>? arrival,
-    @Default("정보없음") String? upfirst,
-    @Default("정보없음") String? uplast,
-    @Default("정보없음") String? downfirst,
-    @Default("정보없음") String? downlast,
+    @Default("정보없음") String? upFirst,
+    @Default("정보없음") String? upLast,
+    @Default("정보없음") String? downFirst,
+    @Default("정보없음") String? downLast,
   }) = _ArrivalFiltedModel;
 
   factory ArrivalFiltedModel.fromJson(Map<String, dynamic> json) =>

@@ -99,8 +99,8 @@ class _SwitchDialogCState extends State<SwitchDialogC> {
                                           itemBuilder: (BuildContext context){
                                         return info.map((e){
                                           return PopupMenuItem(
-                                              value: e.line_ui,
-                                              child: TextFrame(comment: e.line_ui)
+                                              value: e.lineUi,
+                                              child: TextFrame(comment: e.lineUi)
                                           );
                                         }).toList();
                                       },

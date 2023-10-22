@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       loaded: (a,b,dustInfo,c) => dustInfo.barLevel);
     linevalue = context.watch<TransferBloc?>()!.state.when(
         initial: () => initial, loading: () => 'Line2', error: (msg) => 'Line2',
-        loaded: (subA,subB) => subA.first.line_ui);
+        loaded: (subA,subB) => subA.first.lineUi);
   }
 
   @override
@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           return const TextFrame(comment: '목적지를 설정해주세요');
                         } else {
                           return TableScreen(
-                            subName: state.subname, engName: state.engname,
+                            subName: state.subName, engName: state.engName,
                           );
                         }
                       },
