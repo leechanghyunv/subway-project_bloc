@@ -3,11 +3,11 @@ import 'message.dart';
 
 class BlocCombineTButton extends StatefulWidget {
 
-  final subname;
-  final engname;
-  final subline;
+  final subName;
+  final engName;
+  final subLine;
 
-  const BlocCombineTButton({super.key, this.subname, this.subline, this.engname});
+  const BlocCombineTButton({super.key, this.subName, this.subLine, this.engName});
 
   @override
   State<BlocCombineTButton> createState() => _BlocCombineTButtonState();
@@ -23,9 +23,9 @@ class _BlocCombineTButtonState extends State<BlocCombineTButton> {
   void initState() {
     super.initState();
     context.read<CodeBloc?>()?.add(
-        CodeEvent.started(widget.subname,widget.subline));
+        CodeEvent.started(widget.subName,widget.subLine));
     context.read<SubInfoFilterBloc?>()?.add(
-        SubInfoFilterEvent.filtedAfter(widget.subname,widget.subline));
+        SubInfoFilterEvent.filtedAfter(widget.subName,widget.subLine));
   }
 
   @override
@@ -63,7 +63,7 @@ class _BlocCombineTButtonState extends State<BlocCombineTButton> {
                   onPressed: (){
                     context.read<StoreTBloc>().
                     add(StoreTEvent.started(code, submodel));
-                    savemsg('목적지 T', widget.subname, widget.engname);
+                    savemsg('목적지 T', widget.subName, widget.engName);
                     Navigator.of(context).pop();
                   },
                   child: const Text('Done',

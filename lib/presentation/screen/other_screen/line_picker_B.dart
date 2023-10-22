@@ -69,9 +69,9 @@ class LinePickerB extends StatelessWidget {
           }),
       actions: [
         BlocCombineTButton(
-          subname: value,
-          subline: lineNumber,
-          engname: blocList.first.engName),
+          subName: value,
+          subLine: lineNumber,
+          engName: blocList.first.engName),
       ],
     );
   }
