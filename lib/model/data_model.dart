@@ -6,12 +6,12 @@ part 'data_model.g.dart';
 @Freezed()
 class SubwayModel with _$SubwayModel{
   const factory SubwayModel({
-    @Default('정보없음') String subName,
-    @Default('정보없음') String engName,
-    @Default(0.0) double lat,
-    @Default(0.0) double lng,
-    @Default('정보없음') String lineUi,
-    @Default(0) int subwayId,
+    @JsonKey(name: 'subname') required String subName,
+    @JsonKey(name: 'engname') required String engName,
+    required double lat,
+    required double lng,
+    @JsonKey(name: 'line_ui') required String lineUi,
+    @JsonKey(name: 'subwayid') required int subwayId,
     @Default('정보없음') String line,
     @Default('정보없음') String heading,
     @Default(false) bool? isSelected,
